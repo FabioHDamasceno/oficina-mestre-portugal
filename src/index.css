@@ -8,51 +8,87 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Oficina Design System - Professional Automotive Theme */
+    --background: 0 0% 98%;
+    --foreground: 222 47% 11%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 222 47% 11%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 222 47% 11%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary: Deep automotive blue */
+    --primary: 215 89% 25%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 215 89% 30%;
+    --primary-light: 215 89% 40%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary: Professional gray */
+    --secondary: 215 16% 90%;
+    --secondary-foreground: 222 47% 11%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted elements */
+    --muted: 215 16% 95%;
+    --muted-foreground: 215 13% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent: Warning orange for alerts */
+    --accent: 35 100% 50%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Success color for positive states */
+    --success: 120 60% 40%;
+    --success-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Warning for medium priority */
+    --warning: 45 93% 47%;
+    --warning-foreground: 0 0% 100%;
 
-    --radius: 0.5rem;
+    /* Destructive for errors */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --sidebar-background: 0 0% 98%;
+    /* Borders and inputs */
+    --border: 215 20% 85%;
+    --input: 215 20% 90%;
+    --ring: 215 89% 25%;
 
-    --sidebar-foreground: 240 5.3% 26.1%;
+    /* Border radius */
+    --radius: 0.75rem;
 
-    --sidebar-primary: 240 5.9% 10%;
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(215 89% 25%), hsl(215 89% 35%));
+    --gradient-secondary: linear-gradient(135deg, hsl(215 16% 90%), hsl(215 16% 95%));
+    --gradient-accent: linear-gradient(135deg, hsl(35 100% 50%), hsl(35 100% 60%));
 
-    --sidebar-primary-foreground: 0 0% 98%;
+    /* Shadows */
+    --shadow-card: 0 4px 6px -1px hsl(215 89% 25% / 0.1), 0 2px 4px -1px hsl(215 89% 25% / 0.06);
+    --shadow-elevated: 0 10px 15px -3px hsl(215 89% 25% / 0.1), 0 4px 6px -2px hsl(215 89% 25% / 0.05);
 
-    --sidebar-accent: 240 4.8% 95.9%;
+    /* Sidebar specific */
+    --sidebar-background: 215 25% 14%;
+    --sidebar-foreground: 215 16% 90%;
+    --sidebar-primary: 215 89% 30%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 215 25% 18%;
+    --sidebar-accent-foreground: 215 16% 90%;
+    --sidebar-border: 215 25% 20%;
+    --sidebar-ring: 215 89% 25%;
 
-    --sidebar-accent-foreground: 240 5.9% 10%;
+    /* Dashboard metrics */
+    --metric-positive: 120 60% 40%;
+    --metric-negative: 0 84% 60%;
+    --metric-neutral: 215 13% 45%;
 
-    --sidebar-border: 220 13% 91%;
+    /* Status colors */
+    --status-pending: 45 93% 47%;
+    --status-in-progress: 215 89% 35%;
+    --status-completed: 120 60% 40%;
+    --status-cancelled: 0 84% 60%;
 
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
 
   .dark {
